@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  converter:
+    image: "martinogiacchetti/convert-audio-mp3:first-build"
+    volumes:
+      - "../data/to_convert/:/to_convert"
+# limit cpus: https://docs.docker.com/config/containers/resource_constraints/#configure-the-default-cfs-scheduler
